@@ -6,12 +6,14 @@ def drawBoard(board):
         #This function prints out the board that it was passed.
 
         #"board" is actually a list of 10 strings representing the board (ignore index 0).
-
-    print(board[7] + '|' + board[8] + '|' + board[9])
-    print('-+-+-')
-    print(board[4] + '|' + board[5] + '|' + board[6])
-    print('-+-+-')
-    print(board[1] + '|' + board[2] + '|' + board[3])
+    print('   |  ' + '   |  ')
+    print(board[7] + '  |  ' + board[8] + '  |  ' + board[9])
+    print('-+-+-' * 3)
+    print(board[4] + '  |  ' + board[5] + '  |  ' + board[6])
+    print('   |  ' + '   |  ')
+    print('-+-+-' * 3)
+    print(board[1] + '  |  ' + board[2] + '  |  ' + board[3])
+    print('   |  ' + '   |  ')
 
 def inputPlayerLetter():
     # Lets the player type which letter they want to be.
@@ -171,7 +173,7 @@ while True:
                     print('Couldn\'t even beat the computer?')
                     break
                 else:
-                    turn = 'Player'
+                    turn = 'player'
 
     print('Do you want to play again? (yes or no)')
     if not input().lower().startswith('y'):
