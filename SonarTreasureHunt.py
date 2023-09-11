@@ -17,4 +17,11 @@ def getNewBoard():
                 board[x].append('`')
     return board
 
+def drawBoard(board):
+    #drawing what the board lookslike
+    tensDigitsLine =  ' ' # Initial space for the numbers down the left side fo the board
+    for i in range(1, 6):
+        tensDigitsLine += (' ' * 9) + str(i)
+
+    #printing all 15 rows like it was shown above:
 
