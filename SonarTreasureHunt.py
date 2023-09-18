@@ -24,4 +24,9 @@ def drawBoard(board):
         tensDigitsLine += (' ' * 9) + str(i)
 
     #printing all 15 rows like it was shown above:
+    print(tensDigitsLine)
+    print('  ' + ('0123456789' * 6))
+    print()
 
+    #print each of the 15 rows
+    for row in range(15):
