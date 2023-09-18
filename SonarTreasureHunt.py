@@ -30,3 +30,20 @@ def drawBoard(board):
 
     #print each of the 15 rows
     for row in range(15):
+        #single didgit numbers need to be passed with an extra space so that it lines up with the double digit numbers
+        if row < 10: #so if row is less than 10, give em a some more space
+            extraSpace = ' '
+        else:
+            extraSpace = ''
+        
+        #creating the string for this row on the board
+        boardRow = ''
+        for column in range(60)
+            boardRow += board[column][row]
+
+        print ('%s%s %s %s' % (extraSpace, row, boardRow, row))
+
+    #printing numbers across the bottom of the board
+    print()
+    print( '   ' + ('0123456789' * 6))
+    print(tensDigitsLine)
